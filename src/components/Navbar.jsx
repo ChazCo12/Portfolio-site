@@ -126,20 +126,11 @@ const Navbar = () => {
               </a>
             </li>
           </Link>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-transparent">
-            <a
-              className="flex items-center justify-between w-full text-gray-300"
-              href="./assets/projects/cv.pdf"
-              download
-            >
-              Resume <BsFillPersonLinesFill size={30} />
-            </a>
-          </li>
           <li>
             <img
               src={Pokelogo}
               alt=""
-              className={`mt-2 cursor-pointer mr-28 w-8   ${
+              className={`mt-2 cursor-pointer mr-28 w-7   ${
                 isSpinning ? "spin-animation" : ""
               }`}
               onClick={() => {
