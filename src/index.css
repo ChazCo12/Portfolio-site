@@ -4,17 +4,19 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 
 @layer base {
   p {
-    @apply font-[Cabin];
+    @apply font-[Open+Sans];
+    @apply tracking-wide;
   }
   h1,
   h2 {
     @apply font-[Raleway];
   }
   li {
-    @apply font-[Cabin];
+    @apply font-[Open+Sans];
     @apply px-4;
     @apply cursor-pointer;
   }

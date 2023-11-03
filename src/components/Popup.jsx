@@ -16,7 +16,7 @@ export default function Popup() {
             You Caught
           </p>
           <img src={sprite} alt="" className="items-center m-0 align-middle" />
-          <p className="text-center text-[#ccd6f6] font-semibold">{name}</p>
+          <p className="text-center text-[#ccd6f6] font-semibold"> A {name}!</p>
         </div>
       </div>
     </div>
