@@ -5,7 +5,7 @@ import { useProductsContext } from "../context/context";
 export default function Popup() {
   const { name, sprite, Popup } = useProductsContext();
   return (
-    <div className="absolute flex items-center justify-center h-screen">
+    <div className="absolute z-10 flex items-center justify-center h-screen">
       <div className="fixed inset-0 flex items-center justify-center bg-opacity-75 bg-[#0a192f]">
         <div className="p-8 bg-[#0a192f] rounded-lg shadow-lg border border-[#33d6a4] ">
           <p className="text-center text-[#ccd6f6] font-semibold ">

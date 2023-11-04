@@ -36,6 +36,12 @@
     hsla(162, 66.5%, 61%, 0.8)
   ) !important;
 }
+.wrapper {
+  z-index: 0;
+  display: flex;
+  height: 80px;
+  overflow: hidden;
+}
 
 .links {
   height: 30px;
@@ -79,4 +85,42 @@
 
 .lightText {
   font-weight: 100;
+}
+.magic-words {
+  height: 100%;
+  padding-left: 0px;
+  z-index: -1;
+  animation: spin-words 10s infinite;
+}
+
+.words {
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes spin-words {
+  10% {
+    transform: translateY(-112%);
+  }
+  25% {
+    transform: translateY(-100%);
+  }
+  35% {
+    transform: translateY(-212%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  60% {
+    transform: translateY(-312%);
+  }
+  75% {
+    transform: translateY(-300%);
+  }
+  85% {
+    transform: translateY(-412%);
+  }
+  100% {
+    transform: translateY(-400%);
+  }
 }

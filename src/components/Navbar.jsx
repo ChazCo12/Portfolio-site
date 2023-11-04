@@ -65,8 +65,8 @@ const Navbar = () => {
         ) : null}
       </ul>
       {/* Hamburger */}
-      <div onClick={handleClick} className="z-10 md:hidden">
-        {!nav ? <FaBars style={{ width: "55px" }} /> : <FaTimes />}
+      <div onClick={handleClick} className="z-100 md:hidden ">
+        {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
       {/* Mobile menu */}
@@ -74,7 +74,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+            : " z-100 absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
         }
       >
         <li className="py-6 text-4xl ">
@@ -106,7 +106,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-transparent">
             <a
               className="flex items-center justify-between w-full text-gray-300"
-              href="/"
+              href="https://www.linkedin.com/in/charlie-cohen-b54ab3256/"
             >
               Linkedin <FaLinkedin size={30} />
             </a>

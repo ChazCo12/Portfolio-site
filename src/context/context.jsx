@@ -5,6 +5,7 @@ const pokemonstate = {
   name: "",
   sprite: "",
   popup: false,
+  nav: false,
 };
 const ProductsContext = React.createContext();
 
@@ -19,6 +20,12 @@ export const ProductsProvider = ({ children }) => {
     } catch (error) {}
   };
 
+  const setNavTrue = () => {
+    dispatch({ type: "SET_NAV_TRUE" });
+  };
+  const setNavFalse = () => {
+    dispatch({ type: "SET_NAV_FALSE" });
+  };
   const closePopup = () => {
     dispatch({ type: "CLOSE_POPUP" });
   };
@@ -28,7 +35,14 @@ export const ProductsProvider = ({ children }) => {
   };
   return (
     <ProductsContext.Provider
-      value={{ ...state, fetchPokemon, closePopup, showPopup }}
+      value={{
+        ...state,
+        fetchPokemon,
+        closePopup,
+        showPopup,
+        setNavTrue,
+        setNavFalse,
+      }}
     >
       {children}
     </ProductsContext.Provider>
