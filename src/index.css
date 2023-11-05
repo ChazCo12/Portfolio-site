@@ -32,15 +32,9 @@
 .content-div:hover {
   background-image: linear-gradient(
     to right,
-    rgba(51, 214, 165, 0.9),
-    hsla(162, 66.5%, 61%, 0.8)
+    rgba(67, 97, 238, 1),
+    hsla(229.474, 72%, 40%, 0.7)
   ) !important;
-}
-.wrapper {
-  z-index: 0;
-  display: flex;
-  height: 80px;
-  overflow: hidden;
 }
 
 .links {
@@ -58,7 +52,7 @@
   height: 4px;
   width: 65%;
   transform: translateX(-140%);
-  background-color: #33d6a4;
+  background-color: #4361ee;
   transition: all 0.8s;
   border-radius: 8px;
 }
